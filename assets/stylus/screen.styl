@@ -1,0 +1,89 @@
+@import 'jeet'
+//edit()
+
+
+html, body
+  margin 0px
+  height 100%
+  min-height 100%
+  font-family PT Sans Narrow
+  color #fff
+  
+//block-a
+.block-a
+  center(100%)
+  text-align center
+  min-height 100%
+  position relative 
+  background url(../img/bg-small.png), url(../img/bg-a.jpg)
+  background-size 30px, cover
+  background-repeat repeat, no-repeat
+  
+ h1, h2
+   margin 5px 
+ .block-a h1
+   color #fff
+   font-size 2.5em
+   text-align center
+   text-transform uppercase
+   +below(600px)
+     font-size 1.5em
+  
+ .block-a h2
+   cf()
+   color #fff
+   text-align center
+   text-transform uppercase
+   font-size 2em
+   +below(600px)
+     font-size 1em 
+ .block-b
+   center()
+   background #000 
+   min-height 100%
+   position relative 
+   
+  .down
+    position absolute
+    bottom 25px
+    left 50%
+    margin-left -16px
+    +below(600px)
+      display none
+  .logo
+    margin 30px
+    +below(600px)
+      margin 5px  
+  
+      
+         
+    
+  .order
+    background-color green
+    color #fff
+    padding 10px
+    font-weight bold
+    text-transform uppercase
+    font-size 1em
+    border solid 1px darken(green,40%)
+    cursor pointer 
+    +below(600px)
+      font-size 0.8em
+      padding 3px
+   .order:hover
+     background-color darken(green,10%)   
+     
+
+  .items
+    center(760px, 10px)
+    text-align center
+    margin auto
+    +below(600px)
+      //display none
+  .item
+    col(.26)
+    padding 0px
+    margin 4px
+    +below(600px)
+      col(1/2, cycle:2)
+    

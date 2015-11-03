@@ -1,0 +1,23 @@
+{
+  "name": "Car-repair-landing",
+  "version": "1.0.0",
+  "description": "Landing page for car repair service",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-stylus": "^2.1.0",
+    "gulp-uglify": "^1.4.2",
+    "jeet": "^6.1.2",
+    "rupture": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dizziness",
+  "license": "ISC"
+}

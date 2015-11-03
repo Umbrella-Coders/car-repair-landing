@@ -1,0 +1,63 @@
+doctype html
+html
+  head(lang="en")
+    title Samle Template
+    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+    meta(name="description", content="Description")
+    meta(name="keywords", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")
+    // [if lt IE 9]
+    script(type="text/javascript", src="js/html5shiv.js")
+    // [endif]	
+    link(href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic', rel='stylesheet' type='text/css')
+    block css
+    link(rel="stylesheet", href="css/screen.css", type="text/css")
+
+   body
+     header.block-a
+      img.logo(src="img/car.png", width="50", height="50")
+      h1.wow.bounceInDown Кузовной ремонт автомобилей
+      h2.wow.bounceInUp в Набережных Челнах
+      h2.wow.bounceInUp +7(927)046-00-70
+      hr(width="70%")
+      
+      .items
+        span.item.wow.bounceInUp(data-wow-delay="0.1s")
+          img(src="img/wharranty.png", width="60", height="60")
+          br  
+          |Гарантия 24 месяца    
+           
+        span.item.wow.bounceInUp(data-wow-delay="0.2s")
+          img(src="img/worker.png", width="60", height="60")
+          br
+          |Работают профессионалы
+        span.item.wow.bounceInUp(data-wow-delay="0.3s")
+          img(src="img/colors.png", width="60", height="60")
+          br
+          |100% попадание в цвет
+        span.item.wow.bounceInUp(data-wow-delay="0.4s")
+          img(src="img/price.png", width="60", height="60")
+          br
+          |Доступные цены
+      br
+      br  
+      h2 Ремонт одной детали с покраской: от 2500 руб.
+      br
+      br
+      a.order Рассчитать стоимость ремонта по фото &raquo; 
+      br
+      br  
+      a.down.wow.wobble(href="#block-b", data-wow-delay="10s", data-wow-iteration="2")
+        img(src="img/down.png")
+    
+
+   section.block-b#block-b
+     |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste officia voluptatem quod facilis eum cum ea nesciunt aliquid, illo debitis necessitatibus fuga alias, quasi assumenda. Non, repellendus ut ullam!
+
+     a.down(href="#block-c")
+        img(src="img/down.png")
+     
+     link(rel="stylesheet", href="css/animate.min.css", type="text/css")
+     script(type="text/javascript", src="js/jquery.min.js")
+     script(type="text/javascript", src="js/wow.min.js")
+     script(type="text/javascript", src="js/engine.js")
