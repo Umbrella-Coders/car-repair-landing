@@ -21,7 +21,7 @@ html, body
   
  h1, h2
    margin 5px 
- .block-a h1
+ .block-a h1, .block-b h1, .block-c h1, .block-d h1
    color #fff
    font-size 2.5em
    text-align center
@@ -29,7 +29,7 @@ html, body
    +below(600px)
      font-size 1.5em
   
- .block-a h2
+ .block-a h2, .block-b h2, .block-c h2, .block-d h1
    cf()
    color #fff
    text-align center
@@ -37,13 +37,22 @@ html, body
    font-size 2em
    +below(600px)
      font-size 1em 
- .block-b
-   center()
+ .block-b, .block-d
+   center(100%)
    background #000 
    min-height 100%
-   position relative 
-   
-  .down
+   position relative
+   background url(../img/simple_dashed.png)
+   background-size 14px 
+ .block-c
+   center(100%)
+   background #000 
+   min-height 100%
+   position relative
+   background url(../img/bg-small.png), url(../img/bg-b.jpg)
+   background-size 30px, cover
+   background-repeat repeat, no-repeat  
+ .down
     position absolute
     bottom 25px
     left 50%
@@ -86,4 +95,77 @@ html, body
     margin 4px
     +below(600px)
       col(1/2, cycle:2)
-    
+      
+
+   .works
+     col(.49, cycle:2)
+     position relative
+     margin 4px
+     border 1px solid #fff
+     img
+       max-width 100%
+       height 100%
+     span 
+       display block
+       position absolute
+       width 100%
+       bottom 0px
+       color #fff
+       background rgba(0,0,0,.75)
+       +below(600px)
+         font-size 0.4em     
+  table
+    col(.49, cycle:2)
+    font-size 1.2em
+    text-align left
+    +below(600px)
+      col(1/1)
+      font-size 0.8em
+      text-align left
+    tr
+      border-bottom 1px dashed #ccc
+      cursor pointer
+      background rgba(0,0,0,.50)
+      td    
+        padding 2px 5px
+        img
+          margin-right 5px 
+    td:hover
+      background darken(rgba(0,0,0,.50),20%)
+  
+  .left, .right 
+    col(.49, cycle:2)
+    font-size 1.2em
+    text-align left
+    +below(600px)
+      col(1/1)
+  h4
+    margin 0px
+    text-align center
+    border-bottom 1px solid #ccc
+    +below(600px)
+      font-size 0.8em
+      color orange
+  form
+    background rgba(255,255,255,.30)
+    text-align center
+    border-left 1px dashed #ccc
+    input,button
+      width 85%
+      margin 5px 
+      padding 5px
+      font-size 0.7em
+      border-radius 0px
+      border 1px solid #fff
+    .dropzone
+      position relative
+      width 90%
+      height 150px
+      margin 5px auto
+      padding 5px auto
+      color #242424
+      border 2px dashed green
+      background-color #fff
+        
+      
+                      
