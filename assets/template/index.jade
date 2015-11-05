@@ -1,9 +1,9 @@
 doctype html
 html
   head(lang="en")
-    title Samle Template
+    title Кузовной ремонт автомобилей в Набережных Челнах.
     meta(http-equiv="content-type", content="text/html; charset=UTF-8")
-    meta(name="description", content="Description")
+    meta(name="description", content="Выполняем кузовные работы любой сложности. Доступные цены. Качество и гарантия.")
     meta(name="keywords", content="")
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")
     // [if lt IE 9]
@@ -40,13 +40,16 @@ html
           br
           |Доступные цены
       br
-      br  
       h2 Ремонт одной детали с покраской: от 2500 руб.
+      span.more 
+        a(href="#block-c") Прайс лист на все наши услуги &raquo;
+      br
+      br 
+      br   
+      a.order(href="#order") Рассчитать стоимость ремонта по фото &raquo; 
       br
       br
-      a.order(href="#dropzone") Рассчитать стоимость ремонта по фото &raquo; 
-      br
-      br  
+
       a.down.wow.wobble(href="#block-b", data-wow-delay="10s", data-wow-iteration="2")
         img(src="img/down.png")
     
@@ -92,7 +95,8 @@ html
           |Ремонт бампера Suzuki Grand Vitara 2. + Покарска. 
           br
           |Стоимость: 4500р. 
-
+        span.more 
+          a(href="#vk") Посмотреть все наши работы в фотоальбоме Вконтакте &raquo;  
 
      a.down(href="#block-c")
         img(src="img/down.png")
@@ -211,7 +215,10 @@ html
               img(src="img/ok3.png")
               |Защитная полировка кузова
             td От 3.000 рублей      
+        span.more 
+          a(href="#order") Оценить стоимость ремонта вашего автомобиля по фотографиям &raquo;
       br
+
       br  
       a.down.wow.wobble(href="#block-d", data-wow-delay="10s", data-wow-iteration="2")
         img(src="img/down.png")
@@ -221,18 +228,51 @@ html
      h1.wow.bounceInDown Отзывы клиентов и контактные данные
 
      .items
-        .left
-        .right
-          h4 Оценить стоимость ремонта по фотографиям
+       .left
+          h4#order Оценить стоимость ремонта онлайн
           form
            input(type="text", placeholder="Телефон для связи")
            .dropzone#dropzone
             
-           button.order Расчитать стоимость  
+           button.send(type="button")  Расчитать стоимость
+
+          h4 Контакты
+          .contact_item
+            |Телефон/Whatsapp/Telegram: 
+            a(href="tel:+79270460070")|+7(927)046-00-70
+          h4 Схема проезда
+          
+          iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d71981.63057800193!2d52.29626755!3d55.68158184999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1446689861436", width="100%", height="250" ,frameborder="0", style="border:0")
+
+       .right
+          h4 Отзывы наших клиентов
+          .feedback.wow.bounceInUp(data-wow-delay="0.1s")
+            img(src="img/add.png")
+            b Рамиль, Набережные Челны, Honda Civic
+            br
+            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam repellendus iusto blanditiis inventore impedit molestias, vero repellat ad aspernatur.
+          .feedback.wow.bounceInUp(data-wow-delay="0.2s")
+            img(src="img/add.png")
+            b Рамиль, Набережные Челны, Honda Civic
+            br
+            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam repellendus iusto blanditiis inventore impedit molestias, vero repellat ad aspernatur.
+          .feedback.wow.bounceInUp(data-wow-delay="0.3s")
+            img(src="img/add.png")
+            b Рамиль, Набережные Челны, Honda Civic
+            br
+            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam repellendus iusto blanditiis inventore impedit molestias, vero repellat ad aspernatur.
+          .feedback.wow.bounceInUp(data-wow-delay="0.4s")
+            img(src="img/add.png")
+            b Рамиль, Набережные Челны, Honda Civic
+            br
+            |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quam repellendus iusto blanditiis inventore impedit molestias, vero repellat ad aspernatur.
+
+      
 
 link(rel="stylesheet", href="css/animate.min.css", type="text/css")
 link(rel="stylesheet", href="css/dropzone.css", type="text/css")
 script(type="text/javascript", src="js/jquery.min.js")
+script(type="text/javascript", src="js/notify.min.js")
 script(type="text/javascript", src="js/wow.min.js")
 script(type="text/javascript", src="js/dropzone.js")
 script(type="text/javascript", src="js/engine.js")     

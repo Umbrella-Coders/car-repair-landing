@@ -12,7 +12,7 @@ $(document).ready(function() {
 				 $target = $(target);
 				  
 				$('html, body').stop().animate({
-				 'scrollTop': $target.offset().top-90
+				 'scrollTop': $target.offset().top
 				 }, 500, 'swing', function () {
 				 //window.location.hash = target;
 				 });
@@ -27,9 +27,9 @@ new WOW().init();
 
 $('.send').click(function(){
 
- 
+    $.notify("Send Clicked", "success", { position:"right",autoHideDelay: 5000 });
 
-    var form = jQuery(this).parent().parent();
+    var form = jQuery(this).parent();
 	
 	var fio = form[0].fio.value;
 	var phone = form[0].phone.value;
